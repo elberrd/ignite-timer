@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background: ${(propos) => propos.theme["gray-900"]};
         color: ${(propos) => propos.theme["gray-300"]};
+        -webkit-font-smoothing: antialiased;
     }
     
     body, input, button, textarea{
