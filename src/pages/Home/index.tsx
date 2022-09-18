@@ -90,8 +90,10 @@ export function Home() {
   const secondsAmountString = String(secondsAmount).padStart(2, "0");
 
   useEffect(() => {
-    document.title = `${minutesAmountString}:${secondsAmountString} | Pomodoro`;
-  }, [minutesAmountString, secondsAmountString]);
+    if (activeCycle) {
+      document.title = `${minutesAmountString}:${secondsAmountString} | Pomodoro`;
+    }
+  }, [minutesAmountString, secondsAmountString, activeCycle]);
 
   const task = watch("task");
   const isSubmitDisabled = !task;
