@@ -65,7 +65,7 @@ export function Countdown() {
       <span>{minutesAmountString[1]}</span>
       <Separator>:</Separator>
       <span>{secondsAmountString[0]}</span>
-      <span>{secondsAmountString[0]}</span>
+      <span>{secondsAmountString[1]}</span>
     </CountdownContainer>
   );
 }
